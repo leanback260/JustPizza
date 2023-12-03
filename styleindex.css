@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap");
+
+svg {
+	font-family: 'Homemade Apple', cursive;
+	font-size: 370px;
+	width: 500px;
+}
+svg text {
+	animation: stroke 5s infinite alternate ;
+	stroke-width: 1;
+	stroke: #FDFFCD;
+	font-size: 75px;
+}
+
+@keyframes stroke {
+	0%   {
+		fill: rgba(253,255,205,0); stroke: rgba(253,255,205,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(253,255,205,0); stroke: rgba(253,255,205,1); }
+	80%  {fill: rgba(253,255,205,0); stroke: rgba(253,255,205,1); stroke-width: 3; }
+	100% {
+		fill: rgba(253,255,205,1); stroke: rgba(253,255,205,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
+
+
+h1{
+  color: #fdffcd;
+  font-size: 60px;
+  font-family: 'Homemade Apple', cursive;
+}
+a:link {
+  color: #fdffcd;
+  text-decoration: none;
+}
+
+a:hover {
+  color: none;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a{
+  display: inline-block;
+  margin-left:50px;
+  margin: 10px;
+  opacity: 1;
+}
+
+.mbar{
+ background: rgba(50, 62, 50, 0.5);
+ border-radius:12px;
+ color: #fdffcd;
+ font-size: 20px;
+ font-weight: 600;
+}
+
+.wrapper, .mbar{
+  margin-bottom: 30px;
+}
+
+.focus-in-expand {
+	-webkit-animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+.mbar{
+	-webkit-animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@keyframes mbar, container {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+h5{
+  font-weight: 800;
+  font-size: 18px;
+}
+body {
+  font-family: 'Shantell Sans', cursive;
+  background-image: url("https://cdna.artstation.com/p/assets/images/images/014/754/026/large/aodhan-mc-nicholl-gravity-fall-inspired-bg-001.jpg?1545314168");
+  text-align: center;
+}
+img{
+  width: 100%;
+  border-radius: 12px;
+}
+.image{
+  display: flex;
+  width: 100%;
+}
+.container{
+	width: 95%;
+	margin: 0 auto;
+  font-size: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+.block{
+  position:relative;
+  width: 320px;
+  background: #fcfefe;
+  border: 3px solid #385170;
+  justify-content: space-between;
+  backdrop-filter: blur(11px) saturate(180%);
+  -webkit-backdrop-filter: blur(11px) saturate(180%);
+  background-color: rgba(255,255,255, 0.8);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.18);
+}
+.price{
+  padding:20px;
+  bottom:0;
+  justify-content: space-between;
+}
+
+.k{
+  appearance: none;
+  background-color: #FAFBFC;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #24292E;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 5px 10px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+
+.k:hover {
+  background-color: #F3F4F6;
+  text-decoration: none;
+  transition-duration: 0.1s;
+}
+
+.k:disabled {
+  background-color: #FAFBFC;
+  border-color: rgba(27, 31, 35, 0.15);
+  color: #959DA5;
+  cursor: default;
+}
+
+.k:active {
+  background-color: #EDEFF2;
+  box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+  transition: none 0s;
+}
+
+.k:focus {
+  outline: 1px transparent;
+}
+
+.k:before {
+  display: none;
+}
+
+.k:-webkit-details-marker {
+  display: none;
+}
