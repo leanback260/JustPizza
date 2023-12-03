@@ -49,6 +49,7 @@ a:active {
   text-decoration: underline;
 }
 a{
+	color: #fdffcd;
   display: inline-block;
   margin-left:50px;
   margin: 10px;
