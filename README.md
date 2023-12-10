@@ -1,4 +1,8 @@
 My 1-st htnml/css project🌫
+ㅤ
+ㅤ
+ㅤ
 source(photos)📼: souspizza and sevenpiza
 
-Made by David Kucher/2023!!!!!
+ㅤ
+Made by David Kucher/2023🧐🧐🧐
