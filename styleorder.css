@@ -3,7 +3,7 @@
   bottom:0;
   font-weight: 500;
 }
-.container {
+.container, container1 {
   margin: 0 auto;
   font-family: 'Shantell Sans', cursive;
   display: flex;
