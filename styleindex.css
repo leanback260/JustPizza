@@ -49,9 +49,6 @@ svg text {
 	stroke: #FDFFCD;
 	font-size: 90px;
 }
-.container{
-	padding-top: 30px;
-}
 @keyframes stroke {
 	0%   {
 		fill: rgba(253,255,205,0); stroke: rgba(253,255,205,1);
@@ -150,34 +147,34 @@ h5{
 body {
   font-family: 'Shantell Sans', cursive;
   background-image: url("https://cdna.artstation.com/p/assets/images/images/014/754/026/large/aodhan-mc-nicholl-gravity-fall-inspired-bg-001.jpg?1545314168");
-	background-size: 100% 100%;
+	background-size: contain;
   text-align: center;
 }
 img{
   width: 100%;
   border-radius: 12px;
 }
-.image{
-  display: flex;
-  width: 100%;
+
+
+.container {
+	padding-top: 20px;
+	display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
 }
-.container1{
-	padding-top:50px;
+@media only screen and (max-width: 600px) {
+  .container{
+    grid-template-columns: 1fr;
+  }
 }
-.container, .container1 {
-	width: 95%;
-	margin: 0 auto;
-  font-size: 15px;
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
+@media only screen and (min-width: 1000px) {
+  .container{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 .block{
-  position:relative;
-  width: 320px;
   background: #fcfefe;
   border: 3px solid #385170;
-  justify-content: space-between;
   backdrop-filter: blur(11px) saturate(180%);
   -webkit-backdrop-filter: blur(11px) saturate(180%);
   background-color: rgba(255,255,255, 0.8);
@@ -188,6 +185,23 @@ img{
   padding:20px;
   bottom:0;
   justify-content: space-between;
+}
+
+.container1 {
+	padding-top: 20px;
+	display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media only screen and (max-width: 600px) {
+  .container1{
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .container1{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 #bottom-div {
   opacity: 0;
